@@ -31,7 +31,7 @@ class Login extends CI_Controller {
             $this->session->set_userdata($arrSession);
             print_r($arrSession);
         }else{
-            echo "Gagal";
+            echo "<script>alert('Username dan password salah');window.location = '".base_url('login')."'</script>";
         }
     }
 
