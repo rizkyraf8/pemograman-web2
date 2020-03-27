@@ -29,7 +29,8 @@ class Login extends CI_Controller {
             );
 
             $this->session->set_userdata($arrSession);
-            print_r($arrSession);
+            
+            redirect('menu_utama');
         }else{
             echo "<script>alert('Username dan password salah');window.location = '".base_url('login')."'</script>";
         }
